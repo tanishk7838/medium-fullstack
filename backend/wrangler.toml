@@ -1,0 +1,6 @@
+name = "backend"
+compatibility_date = "2023-12-01"
+[vars]
+MY_VARIABLE = "production_value"
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiYmJmMjY2ZDAtZDRhYy00ZTI5LTlmZjAtMzc4NjJmYTY1Y2VkIiwidGVuYW50X2lkIjoiODhlYmI2ZDYwMDMwMDUyMjU3NzJiMmM2Y2MyNTEyZGZmN2E5ZDZmOGMxMmQ2MmZkNzZkMTQ4Yjg3ZGZmYWFkMSIsImludGVybmFsX3NlY3JldCI6IjU2YTRhOTI4LTBmYjMtNGRkYi1iMWM5LWZiYzNiMmQ3YzI1YSJ9.XRsdzmRxCF7EBNdss1GTG0sXUDrZoBYYu2fMX69fOeg"
+JWT_SECRET = "Tanishk7838"
