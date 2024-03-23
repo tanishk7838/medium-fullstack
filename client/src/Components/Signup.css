@@ -1,0 +1,93 @@
+
+.signup-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signup-container-left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup-container-left p:nth-child(1){
+    font-size:3vw;
+    font-weight: bold;
+}
+.signup-container-left p:nth-child(2){
+    font-size: 1vw;
+    margin-top: -5%;
+    color: grey;
+}
+
+.signup-container-left p:nth-child(2) a{
+    text-decoration: none;
+    color: grey;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 55%;
+    height: q00vh;
+}
+
+.signup-form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3vh;
+}  
+.signup-form div input{
+    height: 3vh;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(185, 184, 184);
+    font-size: 1rem;
+}
+.signup-form label{
+    font-size: 100%;
+    font-weight: 600;
+}
+.signup-form button{
+    margin-top: 3vh;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    height: 5vh;
+    font-size: 1rem;
+}
+.signup-container-right{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(227, 225, 225);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-container-right p{
+    margin: 0 10%;
+
+}
+
+.signup-container-right p:nth-child(1){
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.signup-container-right p:nth-child(2){
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 1.5%;
+}
+
+
