@@ -72,3 +72,17 @@ userRoute.post("/singin", async (c) => {
     return c.text("Invalid");
   }
 });
+
+userRoute.get("/:id", async(c)=>{
+  const id = c.req.param("id")
+  const prisma = new PrismaClient({
+    datasourceUrl: c.env.DATABASE_URL,
+  }).$extends(withAccelerate());
+  const user = await prisma.user.findFirst({
+    where : {id:id}
+  })
+
+  c.status(200)
+  return c.json({user : user})
+
+})

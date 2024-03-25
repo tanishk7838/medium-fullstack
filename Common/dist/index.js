@@ -7,12 +7,12 @@ exports.updateBlog = exports.createBlog = exports.singinInput = exports.singupIn
 const zod_1 = __importDefault(require("zod"));
 exports.singupInput = zod_1.default.object({
     email: zod_1.default.string().email(),
-    password: zod_1.default.string().min(6),
+    password: zod_1.default.string().min(4),
     name: zod_1.default.string().optional()
 });
 exports.singinInput = zod_1.default.object({
     email: zod_1.default.string().email(),
-    password: zod_1.default.string().min(6)
+    password: zod_1.default.string().min(4)
 });
 exports.createBlog = zod_1.default.object({
     title: zod_1.default.string(),

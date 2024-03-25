@@ -14,7 +14,6 @@ CREATE TABLE "Blog" (
     "content" TEXT NOT NULL,
     "published" BOOLEAN NOT NULL DEFAULT false,
     "authorId" TEXT NOT NULL,
-
     CONSTRAINT "Blog_pkey" PRIMARY KEY ("id")
 );
 

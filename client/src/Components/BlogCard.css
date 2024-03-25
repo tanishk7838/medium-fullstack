@@ -1,0 +1,52 @@
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 15%;
+    box-shadow: 0 1px rgba(128, 128, 128, 0.358);
+    padding: 10px;
+}
+
+.blog-container .header{
+    display: flex;
+    align-items: center;
+}
+
+.blog-container .header div{
+    margin-right: 0.5%;
+    font-size: 1em;
+}
+
+.blog-container .header div:nth-child(1){
+    background-color: black;
+    color: white;
+    height: 3.5vh;
+    width: 2vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-container .header div:nth-child(2){
+    font-weight: bold;
+}
+
+.blog-container .header div:nth-child(3){
+    font-weight: 300;
+    color: grey;
+}
+
+.blog-container .title{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.blog-container .content{
+    font-size: 1.75em;
+    font-weight: 200;
+}
+
+.blog-container .time{
+    margin-top: 2%;
+    color: grey;
+}

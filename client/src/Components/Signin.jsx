@@ -17,6 +17,7 @@ function Signin() {
       .then((res) => {
         console.log(res);
         sessionStorage.setItem("token", res.data.jwt);
+        navigate("/blogs")
       })
       .catch((err) => alert(err.response.data));
     setUserInput({
