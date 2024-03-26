@@ -39,6 +39,7 @@
 .blog-container .title{
     font-size: 3em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .blog-container .content{

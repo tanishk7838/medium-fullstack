@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./BlogCard.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-function BlogsCard({ authId, title, content, date }) {
+function BlogsCard({ authId, title, content, date, blogId }) {
   const [user, setUser] = useState();
+  const navigate = useNavigate()
   useEffect(() => {
     axios
       .get(
@@ -22,7 +24,7 @@ function BlogsCard({ authId, title, content, date }) {
         </div>
         <div>{date.split("T")[0]}</div>
       </div>
-      <div className="title">{title}</div>
+      <div className="title" onClick={()=>navigate("/blogs/"+blogId)}>{title}</div>
       <div className="content">
         {content.length > 200 ? content.slice(0, 200) + "..." : content}
       </div>

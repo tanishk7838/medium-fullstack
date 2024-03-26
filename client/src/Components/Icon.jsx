@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Icon() {
+  const navigate = useNavigate()
   return (
-    <div >
+    <div onClick={()=>navigate("/blogs")}>
       {" "}
       <svg viewBox="0 0 1043.63 592.71" className="q r" style={{height:"3vh"}}>
         <g data-name="Layer 2">

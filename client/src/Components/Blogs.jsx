@@ -14,6 +14,7 @@ function Blogs() {
       })
       .then((res) => {
         setId(res.data.id)
+        sessionStorage.setItem("loginId", res.data.id)
         setData(res.data.blogs)})
       .catch((err) => console.log(err));
   }, []);
@@ -29,6 +30,7 @@ function Blogs() {
               authId={item.authorId}
               key={index}
               date={item.createdAt}
+              blogId = {item.id}
             />
           );
         })}
