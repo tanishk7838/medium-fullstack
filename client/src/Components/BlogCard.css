@@ -46,8 +46,17 @@
     font-size: 1.75em;
     font-weight: 200;
 }
-
 .blog-container .time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog-container .time div{
     margin-top: 2%;
     color: grey;
+}
+
+.blog-container .time button{
+    background: transparent;
+    border: none;
 }

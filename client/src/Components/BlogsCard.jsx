@@ -29,9 +29,11 @@ function BlogsCard({ authId, title, content, date, blogId }) {
         {content.length > 200 ? content.slice(0, 200) + "..." : content}
       </div>
       <div className="time">
-        {Math.ceil(content.length / 100)}
-        {" mins read"}
+        <div>{Math.ceil(content.length / 100)}
+        {" mins read"}</div>
+        {authId === sessionStorage.getItem("loginId") && <button onClick={()=>navigate("/blogs/edit/"+blogId)}>...</button>}
       </div>
+      
     </div>
   );
 }

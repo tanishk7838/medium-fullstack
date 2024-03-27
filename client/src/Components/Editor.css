@@ -1,0 +1,51 @@
+.editor-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 25vw;
+    margin-top: 5vh;
+}
+
+.editor-container input{
+    border: none;
+    height: 10vh;
+    font-size: 6vh;
+    outline: none;
+    text-indent: 2vw;
+}
+.editor-container textarea{
+    border: none;
+    font-size: 3vh;
+    outline: none;
+    text-indent: 2vw;
+    margin-top: 1vh;
+}
+
+.editor-container input::placeholder{
+    color: rgba(128, 128, 128, 0.419);
+}
+.editor-container textarea::placeholder{
+    color: rgba(128, 128, 128, 0.419);
+}
+
+.editor-container input:focus{
+    border-left: 1px solid rgba(128, 128, 128, 0.419);
+}
+.editor-container textarea:focus{
+    border-left: 1px solid rgba(128, 128, 128, 0.419);
+}
+
+
+.editor-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editor-container button {
+    border: none;
+    background-color: rgb(92,143,50);
+    color: white;
+    height: 4vh;
+    width: 6vw;
+    border-radius: 5px;
+}

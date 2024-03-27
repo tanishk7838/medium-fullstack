@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import BlogsCard from "./BlogsCard";
 import Navbar from "./Navbar";
 import axios from "axios";
-function Blogs() {
+function Blogs({setBlogs}) {
   const [data, setData] = useState();
   const [id, setId] = useState()
   useEffect(() => {
@@ -15,7 +15,11 @@ function Blogs() {
       .then((res) => {
         setId(res.data.id)
         sessionStorage.setItem("loginId", res.data.id)
-        setData(res.data.blogs)})
+        const temp = res.data.blogs 
+        temp.reverse()
+        setData(temp)
+        setBlogs(temp)
+      })
       .catch((err) => console.log(err));
   }, []);
   return (

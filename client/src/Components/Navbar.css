@@ -43,6 +43,7 @@
     color: gray;
     justify-content: space-between;
     width: 5vw;
+    cursor: pointer;
 }
 
 .nav-container .right div:nth-child(2){
@@ -54,4 +55,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }

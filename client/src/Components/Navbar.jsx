@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import Icon from "./Icon";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 function Navbar({userId}) {
   const [name, setName]= useState('')
+  const navigate = useNavigate()
   useEffect(()=>{
     axios.get("https://backend.varshneytanishk7838.workers.dev/api/v1/user/"+userId)
       .then(res=>setName(res.data.user.name))
@@ -28,7 +30,7 @@ function Navbar({userId}) {
         </div>
       </div>
       <div className="right">
-        <div>
+        <div onClick={()=>navigate("/editor")}>
           <svg
             width="24"
             height="24"
@@ -47,7 +49,7 @@ function Navbar({userId}) {
           </svg>
           Write
         </div>
-        <div>{name[0]}</div>
+        <div onClick={()=>navigate("/myblogs")}>{name[0]}</div>
       </div>
     </div>
   );
